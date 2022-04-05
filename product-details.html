@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <html lang="ar" dir="rtl"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | Basariat</title>
+    <!--    GOOGLE FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--    BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">-->
+    <!--    FONT AWSOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--    SLICK SLIDER-->
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!--    MAIN CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- <link rel="stylesheet" href="css/arabic.css"> -->
+</head>
+
+<body>
+    <!-- HEADER TOP PART  -->
+    <section class="header-top">
+        <div class="container">
+            <!-- header top content -->
+        </div>
+    </section>
+    <!-- HEADER TOP PART  -->
+
+    <!-- HEADER MIDDLE PART -->
+    <section class="header-middle">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-3">
+                    <div class="logo mt-2">
+                        <img src="assets/img/logo/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-md-5 py-4">
+                    <div class="search-body">
+                        <form action="#">
+                            <input type="text" placeholder="Search for products">
+                            <select name="" id="">
+                                <option value="">SELECT CATEGORY</option>
+                                <option value="">Select Category One</option>
+                                <option value="">Select Category Two</option>
+                                <option value="">Select Category Three</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">Product</option>
+                            </select>
+                            <button type="submit">
+                                <img src="assets/img/photos/Search.png" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="login-register d-flex justify-content-center">
+                        <li>
+                            <a href="#">Login</a> /
+                        </li>
+                        <li>
+                            &nbsp;<a href="#">Register</a>
+                        </li>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="cart-icon d-flex justify-content-center">
+                        <div class="wishlist me-3">
+                            <a href="">
+                                <img src="assets/img/photos/Heart.png" alt="heart-img">
+                                <!-- <sup>03</sup> -->
+                            </a>
+                        </div>
+                        <div class="shopping-cart ms-3">
+                            <a href="">
+                                <img src="assets/img/photos/Shopping Bag.png" alt="cart-img">
+                                <sup>02</sup>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- HEADER MIDDLE PART -->
+
+    <!--    HEADER SECTION-->
+    <header class="d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-1">
+                    <div class="logo d-flex justify-content-between align-items-center">
+                        <a href="#">
+                            <!-- <img src="assets/img/logo/logo.png" alt="Logo"> -->
+                        </a>
+                        <i class="fa fa-bars d-md-none" onClick="mobileClick()" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-11 d-none d-md-block">
+                    <div class="menubar d-flex justify-content-center">
+                        <ul>
+                            <li>
+                                <a href="#">SUNGLASSES &nbsp;<i class="fa-solid fa-angle-down text-white"></i> </a></i>
+                            </li>
+                            <li>
+                                <a href="#">MEDICAL GLASSES &nbsp;<i class="fa-solid fa-angle-down text-white"></i>
+                                </a></i>
+                            </li>
+                            <li>
+                                <a href="#">CONTACT LENSES &nbsp;<i class="fa-solid fa-angle-down text-white"></i>
+                                </a></i>
+                            </li>
+                            <li>
+                                <a href="#">ACCESSORIES</a>
+                            </li>
+                            <li>
+                                <a href="#">BRANDS</a>
+                            </li>
+                            <li>
+                                <a href="#">ONLINE PRESCRIPTIONS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="mobile-menu">
+        <!-- accordion-->
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+
+            <div class="mobile-logo mb-5">
+                <a href="#">
+                    <img src="assets/img/logo/logo.png" alt="mobile-logo">
+                </a>
+                <i id="mobile-cross" class="fa fa-times" onClick="mobileClick()"></i>
+            </div>
+
+            <div class="accordion-item custom ">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            Home
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item custom">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <a href="#">
+                        <button class="accordion-button custom collapsed none" type="button">
+                            About
+                        </button>
+                    </a>
+                </h2>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button custom collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Services
+                    </button>
+                </h2>
+                <div id="two" class="accordion-collapse collapse" aria-labelledby="two"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body custom">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>services</a></li>
+
+                            <li><a href="#"><i class="fa fa-chevron-right"></i>sector</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="mobileOverlay" class="mobile-overlay" onClick="mobileClick()"></div>
+    <!--   END MOBILE MENU-->
+
+    <!-- PRODUCT DETAILS PART START -->
+    <section class="product-details">
+        <div class="container pt-3">
+            <p><a href="#"> Home </a> / <a class="name" href="">Rayban Sunglass For Men Gold RB-2022 01</a></p>
+            <div class="row py-lg-5">
+                <div class="col-lg-5 col-md-6 col-sm-12 divide">
+                    <div class="product-img align-self-center">
+                        <div class="view-img mt-3 mb-3 border-secondary mx-auto d-block">
+                            <img class="img-fluid" src="assets/img/products/big-img.png" alt="big-img">
+                        </div>
+                        <div class="small-img d-flex justify-content-center">
+                            <div class="img-one">
+                                <img src="assets/img/products/9.png" alt="img">
+                            </div>
+                            <div class="img-two">
+                                <img src="assets/img/products/10.png" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="details">
+                        <h3 class="my-4">Rayban Sunglass For Men Gold RB-2022 01</h3>
+                        <div class="spacification d-flex">
+                            <p>Model No : <span>&nbsp; RB-2022</span></p>
+                            <p class="ms-3">Color No : <span>&nbsp; 01/64</span></p>
+                        </div>
+                        <h6>Price : <span>&nbsp; SAR 631.55</span> &nbsp;&nbsp;&nbsp; <del>SAR 750</del></h6>
+                        <hr class="details-divider">
+                        <p>MATERIALS : <span>ACETATE</span></p>
+                        <p>SIZE : <span>59</span></p>
+                        <p>ARM : <span>140</span></p>
+                        <p>BRIDGE : <span>13</span></p>
+                        <p>FRAME SHAPE : <span>AVIATOR</span></p>
+                        <div class="btn my-3">
+                            <div class="add-btn">
+                                <button type="submit">Add To CART</button>
+                            </div>
+                        </div>
+                        <div class="tray-btn mt-2">
+                            <div class="tray-add-btn">
+                                <button type="submit"> <img src="assets/img/photos/virtual-tray-glasses.png" alt=""> &nbsp; Virtual Live Try</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PRODUCT DETAILS PART END -->
+
+    <!-- NEW ARRIVALS PART START -->
+    <section class="new-arrivals py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="category-menu text-center">
+                        <h1>New Arrivals</h1>
+                        <ul class="d-flex justify-content-center my-4">
+                            <li class="mx-3">
+                                <a class="active" href="#">All</a>
+                            </li>
+                            <li class="mx-3">
+                                <a href="#">Men</a>
+                            </li>
+                            <li class="mx-3">
+                                <a href="#">Women</a>
+                            </li>
+                            <li class="mx-3">
+                                <a href="#">Kids</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-lg-5">
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-1.png" alt="">
+                        </div>
+                        <img src="assets/img/products/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>Rayban Sunglass For Men Gold RB-2022 01</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-2.png" alt="">
+                        </div>
+                        <img src="assets/img/products/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>GUcci Sunglass For Women
+                                    black gc-2022 32</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-3.png" alt="">
+                        </div>
+                        <img src="assets/img/products/3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>dior Sunglass For Men
+                                    black dr-2022 41</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-4.png" alt="">
+                        </div>
+                        <img src="assets/img/products/4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>BOSS Sunglass For Women
+                                    tiger bs-2022 57</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-4.png" alt="">
+                        </div>
+                        <img src="assets/img/products/5.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>Rayban Sunglass For Men
+                                    Gold RB-2022 01</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-3.png" alt="">
+                        </div>
+                        <img src="assets/img/products/6.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>GUcci Sunglass For Women
+                                    black gc-2022 32</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-2.png" alt="">
+                        </div>
+                        <img src="assets/img/products/7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>dior Sunglass For Men
+                                    black dr-2022 41</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                    <div class="card product text-center">
+                        <div class="top-img my-3">
+                            <img src="assets/img/brands/brand-1.png" alt="">
+                        </div>
+                        <img src="assets/img/products/8.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                                <h6>Boss Sunglass For Men
+                                    tiger bs-2022 57</h6>
+                                <h5>SAR 631.55 &nbsp;&nbsp;<del>SAR 631.55</del></h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- NEW ARRIVALS PART END -->
+
+    <!-- PARTNERSHIP BRAND PART START -->
+    <section class="partnership-brand">
+        <div class="container pb-lg-5">
+            <div class="row my-3 text-center">
+                <div class="col-md-3 logo-item text-center">
+                    <div class="testimonial d-flex">
+                        <img src="assets/img/photos/Guarantee.png" alt="img">
+                        <h2 class="px-4">ORGINAL PRODUCTS</h2>
+                    </div>
+                </div>
+                <div class="col-md-3 logo-item text-center">
+                    <div class="testimonial d-flex">
+                        <img src="assets/img/photos/shiping.png" alt="img">
+                        <h2 class="px-4">FAST SHIPMENT</h2>
+                    </div>
+                </div>
+                <div class="col-md-3 logo-item text-center">
+                    <div class="testimonial d-flex">
+                        <img src="assets/img/photos/Delivery.png" alt="img">
+                        <h2 class="px-4">FREE DELIVERY</h2>
+                    </div>
+                </div>
+                <div class="col-md-3 logo-item text-center">
+                    <div class="testimonial d-flex">
+                        <img src="assets/img/photos/Guarantee.png" alt="img">
+                        <h2 class="px-4">100% Qualityfull</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PARTNERSHIP BRAND PART END -->
+
+    <!-- OUR NEWSLATTER PART START -->
+    <section class="newsletter py-lg-5">
+        <div class="container my-3">
+            <div class="row">
+                <div class="col-md-4 align-items-center text-center">
+                    <img src="assets/img/photos/Moon Man.png" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h2>GET $20 OFF Basariat
+                        JOIN OUR EMAIL LIST</h2>
+                    <div class="input-group my-3">
+                        <input type="text" class="form-control" placeholder="Enter Your Email Address">
+                        <button class="btn text-uppercase" type="button">subscribes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- OUR NEWSLATTER PART END -->
+
+    <!--    FOOTER SECTION-->
+    <footer class="py-lg-5">
+        <div class="container">
+            <div class="row my-3">
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <img src="assets/img/logo/logo.png" alt="Logo">
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text
+                        </p>
+                        <div class="social-media-footer">
+                            <h4>Social Media</h4>
+                            <div>
+                                <a href="#">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-instagram"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-pinterest-p"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>HomePage </h6>
+                        <div class="footer-menu">
+                            <a href="#">Home</a>
+                            <a href="#">Our Services</a>
+                            <a href="#">Shop Now</a>
+                            <a href="#">My Account</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>Support Link</h6>
+                        <div class="footer-menu">
+                            <a href="#">About Us</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Our Support Team</a>
+                            <a href="#">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-4 mb-md-0">
+                    <div class="footer-box">
+                        <h6>About Us</h6>
+                        <p>
+                            Riadah Incubators Startup Studio
+                            And corporate factory
+                            Khaldiya Towers - 4th Tower
+                            Faisal Bin Turki Road - Office No.
+                            6 - Floor 13 - Riyadh
+                        </p>
+                        <ul>
+                            <li>
+
+                                Phone: +996 0551175959
+                            </li>
+                            <li>
+                                Email: info@basariat.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section class="copyright">
+        <div class="container">
+            <div class="copyright-section text-center">
+                <p>© Copyright 2022 Basariat. All Rights Reserved.</p>
+            </div>
+        </div>
+    </section>
+    <!--    FOOTER SECTION END-->
+
+    <!--    JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--    SLICK SLIDER-->
+    <script src="assets/js/slick.min.js"></script>
+    <!--    BOOSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
