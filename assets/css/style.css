@@ -284,6 +284,27 @@ header {
 }
 /*MOBILE MENU END*/
 
+/* BANNER PART START */
+.banner-two-content{
+    position: relative;
+}
+.banner-two-content .shop-btn{
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%);
+    top: 80%;
+}
+.banner-two-content .shop-btn a {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--wc);
+    background: var(--pc);
+    padding: 8px 26px;
+    border-radius: 4px;
+}
+
+/* BANNER PART End */
+
 /* PARTNERSHIP BRAND PART START */
 .partnership-brand .logo-item {
     border-right: 1px solid #cccccc;
@@ -389,18 +410,6 @@ header {
 }
 
 /* Newsletter part End */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*FOOTER SECTION*/
