@@ -761,6 +761,70 @@ hr.details-divider{
     line-height: 18px;
     color: #464646;
 }
-
-
 /* PRODUCT DETAILS PAGE CSS */
+
+/* ABOUT US PAGE CSS START */
+.know-about p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--pc);
+}
+
+.about-contact {
+    background: #FAFAFA;
+}
+
+.map {
+    background: #FAFAFA;
+}
+
+.address .section-content h3 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--pc);
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 10px;
+}
+
+.address .section-content p {
+    color: var(--pc);
+}
+
+.address .contact h4 {
+    color: var(--pc);
+}
+
+.address .contact {
+    background: #f2fbff7a;
+    box-shadow: 10px 10px 20px -7px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.address .contact button {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--wc);
+    background: var(--pc);
+    border-radius: 7px;
+    border: none;
+    padding: 13px 35px;
+    margin-top: 30px;
+}
+
+.form-control {
+    border: 1px solid var(--wc);
+    box-sizing: border-box;
+    border-radius: 5px;
+    height: 52px;
+    box-shadow: 5px 5px 10px 0px #00000026;
+}
+
+.map h4 {
+    color: var(--pc);
+}
+/* ABOUT US PAGE CSS END */
+
+
+
